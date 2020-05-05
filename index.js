@@ -16,8 +16,8 @@ async function addLabel() {
   });
 
   let existingLabels = issueInfo.data.labels.map(l => l.name);
-  if (ignoredLabel !== null) {
-    let pattern = new RegExp(ignoredLabel, "i");
+  if (ignoreLabeled !== null) {
+    let pattern = new RegExp(ignoreLabeled, "i");
     for (let existingLabel of existingLabels) {
       if (existingLabel.match(pattern)) {
         return `Skipping issue ${issueNumber} because it contains a label ${existingLabel} which matches ${ignoreLabeled}`;
