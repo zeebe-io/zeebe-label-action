@@ -1,0 +1,15 @@
+name: 'label'
+description: 'Add/remove labels to issues'
+inputs:
+  repo-token:
+    description: 'Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}'
+    required: true
+  labels:
+    description: 'A comma-separated list of labels to add to an issue'
+    required: true
+  ignore-labeled:
+    description: 'Ignore issues if they have a label that match the given regexp'
+    required: false
+runs:
+  using: 'node12'
+  main: 'index.js'

@@ -1,0 +1,20 @@
+{
+  "name": "label",
+  "version": "1.0.0",
+  "description": "Labels issues",
+  "main": "label.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeebe-io/zeebe.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@actions/core": "^1.0.0",
+    "@actions/github": "^1.0.1"
+  }
+}
